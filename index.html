@@ -1,8 +1,8 @@
-<!DOCTYPE html><html>
+<html>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<head>
-	
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<link rel="stylesheet" href="./css/flipclock.css">
 		<link rel="stylesheet" href="./css/style.css">
                                <style type="text/css" >body {zoom:0.75 ! important ;}</style>
@@ -40,7 +40,7 @@
 			$(document).ready(function() {
 				clock = $('.clock').FlipClock({
 					clockFace: 'TwelveHourClock',
-					showSeconds: Ture
+					showSeconds: true
 				});
 			});
 
@@ -48,5 +48,33 @@
 			var d = new Date();
 			document.getElementById('ShowDate').innerHTML = d.getFullYear() + "年" +(d.getMonth() + 1) + "月" + d.getDate() + "日" + ' 星期'+'日一二三四五六'.charAt(new Date().getDay());
 		</script>
+<!-- 以下是自己加的 -->		
+<script>
+    var xmlobj;
+    var count=0;
+    function createXMLHttpRequest(){
+      if(window.ActiveXObject){
+        xmlobj=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      else if(window.XMLHttpRequest){
+        xmlobj=new XMLHttpRequest();
+      }
+    }
+    function Autofresh(){
+      createXMLHttpRequest();    
+       count=count+1;    
+      xmlobj.open("GET","currenttime.php?count="+count,true);
+      xmlobj.onreadystatechange=doAjax;
+      xmlobj.send("r="+Math.random());//使用随机数处理缓存
+    }
+    function doAjax(){
+      if(xmlobj.readyState==4 && xmlobj.status==200){
+        var time_span=document.getElementById('currenttime');
+        time_span.innerHTML=xmlobj.responseText;
+        setTimeout("Autofresh()",2000);
+      }
+    }
+  </script>
+<!-- 以上 -->
 	</body>
 </html>
