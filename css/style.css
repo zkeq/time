@@ -40,10 +40,15 @@ h1 {
 {
 	display: table;
 }
-#content 
+#content
 {
 	/*color: #fff;*/
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
+}
+#time-off
+{
+  height:50px;
+
 }
