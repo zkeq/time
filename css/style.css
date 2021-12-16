@@ -2,6 +2,8 @@
 {
 	margin: 0;
 	padding: 0;
+	overflow-x:hidden;
+　　    overflow-y:hidden;
 }
 body
 {
@@ -52,12 +54,4 @@ h1 {
   height:50px;
 
 }
-html{
- 
-　　overflow-x:hidden;
- 
-　　overflow-y:hidden;
- 
-　　}
-
 
