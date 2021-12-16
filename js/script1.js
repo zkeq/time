@@ -27,10 +27,10 @@ $(function()
 			{
 				$(this.el).html
 				(
-					"<div class=\"countdown-box\"><h2 class=\"countdown-number\">" + data.days + "</h2>" + " <h4 class=\"countdown-title\">天</h4></div>" +
-					"<div class=\"countdown-box\"><h2 class=\"countdown-number\">" + data.hours + "</h2>" + " <h4 class=\"countdown-title\">时</h4></div>" +
-					"<div class=\"countdown-box\"><h2 class=\"countdown-number\">" + this.leadingZeros(data.min, 2) + "</h2>" + " <h4 class=\"countdown-title\">分</h4></div>" +
-					"<div class=\"countdown-box\"><h2 class=\"countdown-number\">" + this.leadingZeros(data.sec, 2) + "</h2>" + " <h4 class=\"countdown-title\">秒</h4></div>"
+					"<div class=\"countdown-box\"><h2 class=\"countdown-number\">" + data.days + "</h2>" + " <h4 class=\"countdown-title\">距</h4></div>" +
+					"<div class=\"countdown-box\"><h2 class=\"countdown-number\">" + data.hours + "</h2>" + " <h4 class=\"countdown-title\">离</h4></div>" +
+					"<div class=\"countdown-box\"><h2 class=\"countdown-number\">" + this.leadingZeros(data.min, 2) + "</h2>" + " <h4 class=\"countdown-title\">高</h4></div>" +
+					"<div class=\"countdown-box\"><h2 class=\"countdown-number\">" + this.leadingZeros(data.sec, 2) + "</h2>" + " <h4 class=\"countdown-title\">考</h4></div>"
 				);
 			}
 		});

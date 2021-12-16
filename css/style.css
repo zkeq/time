@@ -23,12 +23,12 @@ body
 }
 .flip-clock-dot
 {
-	background: #ccc;
+	background: rgb(18, 221, 96);
 	/*background: #ffffff;*/
 }
 .flip-clock-meridium a
 {
-    color: #ccc;
+    color: rgb(255, 251, 0);
     /*color: #ffffff;*/
 }
 h1 {
@@ -36,9 +36,12 @@ h1 {
     /*font-family: sans-serif, Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;*/
     font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, sans-serif;
     /*font-family: "Helvetica Neue", Helvetica, sans-serif;*/
-    color: #ccc;
+    color: rgb(238, 16, 201);
 	text-align:center;
 	zoom: 4;
+}
+h2 {
+	zoom: 3.5;
 }
 #box
 {
