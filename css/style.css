@@ -63,3 +63,8 @@ h2 {
 .white{
 	color:rgb(255, 255, 255);
 }
+.white-2{
+	color:rgb(255, 255, 255);
+	font-size: 25px;
+	padding: 15px;
+}
